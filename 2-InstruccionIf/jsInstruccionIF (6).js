@@ -11,11 +11,11 @@ if (edad>=18)
 }
 else if (edad>=13)
 {
-	alert("Es un puber")
+	alert("Es un puber");
 }
 else
 {
-	alert("es una criatura")
+	alert("es una criatura");
 }
 //  or || (pipe)    and &&      not !
 
