@@ -8,7 +8,7 @@ usar una sola ventana alert*/
 function mostrar()
 {
 	var dia;
-	dia = prompt("Introduzca un dia de la semana")
+	dia = prompt("Introduzca un dia de la semana");
 
 	switch (dia) {
 		case "lunes":
@@ -22,6 +22,7 @@ function mostrar()
 		case "domingo":
 		alert("Buen finde semana atr");
 		default:
-		alert("lo que usted acaba de ingresar no es un dia de la semana"):
+		alert("lo que usted acaba de ingresar no es un dia de la semana");
 	}
+
 }
