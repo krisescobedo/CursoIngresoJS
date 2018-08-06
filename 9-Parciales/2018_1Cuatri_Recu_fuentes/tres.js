@@ -6,6 +6,7 @@ function mostrar()
 	var precioConDescuento;
 	var iva;
 	var precioFinal;
+	            
 	precio = prompt("ingrese el precio");
 	precio = parseInt(precio);
 	porcentaje = prompt("ingrese el porcentaje de descuento");
