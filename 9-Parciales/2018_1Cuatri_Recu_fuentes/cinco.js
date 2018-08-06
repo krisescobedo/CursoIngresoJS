@@ -21,6 +21,7 @@ function mostrar()
 		case "sabado":
 		case "domingo":
 		alert("Buen finde semana atr");
-		alert("Ojo! dia no habil");
+		default:
+		alert("lo que usted acaba de ingresar no es un dia de la semana"):
 	}
 }
