@@ -1,38 +1,81 @@
 /*(IF)Pedir tres números e informar cual es el mayor y el menor de los mismos.  */
 function mostrar()
 {
-	var num1;
-	var num2;
-	var num3;
-	
+	var numeroUno;
+	var numeroDos;
+	var numeroTres;
+	var mayor;
+	var menor;
 
-	num1 = prompt("introduzca el 1er numero");
-	num2 = prompt("introduzca el 2do numero");
-	num3 = prompt("introduzca el 3er numero");
+	numeroUno = prompt("introduzca el 1er numero");
+	numeroDos = prompt("introduzca el 2do numero");
+	numeroTres = prompt("introduzca el 3er numero");
+
+	numeroUno= parseInt(numeroUno);
+	numeroDos= parseInt(numeroDos);
+	numeroTres= parseInt(numeroTres);
+
 	
-	if (num3 > num1 && num3 > num2){
-		alert("el numero mayor es el "+num3);
+	if (numeroUno > numeroDos && numeroUno > numeroTres){
+		mayor=numeroUno;
+		}else {
+			if (numeroDos > numeroUno && numeroDos>numeroTres){
+				mayor = numeroDos;
+			} 
+			else {
+				mayor = numeroTres;
+			}
+		}	
+		
+	if (numeroUno<numeroDos && numeroUno<numeroTres) {
+		menor=numeroUno;
+	}else {
+		if (numeroDos<numeroUno&& numeroDos<numeroTres){
+			menor=numeroDos;
 		}
-	if (num1 > num3 && num1 > num2) {
-		alert("el numero mayor es el "+num1);
+		else {
+			menor=numeroTres;
+		}
 	}
-	if (num2 > num1 && num2 >num3) {
-		alert("el numero mayor es el "+num2);
+	alert("el mayor es " +mayor);
+	alert("el menor es " +menor);
+}	
+
+
+
+/*
+	if (numeroUno > numeroTres && numeroUno > numeroDos) {
+		alert("el numero mayor es el "+numeroUno);
+	}
+	if (numeroDos > numeroUno && numeroDos >numeroTres) {
+		alert("el numero mayor es el "+numeroDos);
 	}
 
-	if (num1 < num3 && num1 < num2) {
-		alert("el numero menor es "+num1);
+	if (numeroUno < numeroTres && numeroUno < numeroDos) {
+		alert("el numero menor es "+numeroUno);
 	}
-	if (num2 < num3 && num2 < num1) {
-		alert("el numero menor es "+num2);
+	if (numeroDos < numeroTres && numeroDos < numeroUno) {
+		alert("el numero menor es "+numeroDos);
 	}
-	if (num3 < num1 && num3 < num1)
-		alert("el numero menor es "+num3)
+	if (numeroTres < numeroUno && numeroTres < numeroUno)
+		alert("el numero menor es "+numeroTres)
 
-	
-
+*/
+/*
+	if (numeroUno < numeroDos && numeroDos < numeroTres) {
+		alert("el numero mayor es el "+numeroTres);
+		alert("el numero menor es el "+numeroUno);
+	}
+	else if (numeroUno > numeroDos && numeroDos > numeroTres) {
+		alert("el numero mayor es "+numeroUno);
+		alert("el numero menor es el "+numeroTres);
+	}
+	else if { (numeroDos > )
+		alert("el numero")
+	}
+*/
 
 
 
 //	alert("comentar esta linea 4");
-}
+

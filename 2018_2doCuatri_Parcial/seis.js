@@ -20,23 +20,30 @@ function mostrar()
 		case "primavera":
 		if (temperatura > 32){
 			alert("Es un horno!!");
-		}
-		if (temperatura <= 32 && temperatura >=20) {
-			alert("que calorcito!!!");
+		}else {
+			if (temperatura <= 32 && temperatura >=20) {
+				alert("que calorcito!!!");
+			}
 		}
 		break;
+
+/* Si es otoño con 15 grados mostrar “esta lindo”, si está por debajo de esa temperatura 
+mostrar “se vino el frío” y si la supera los 15 pero no pasa de 21 “esta re bueno!”. Si supera el último valor 
+mostrar “mucho calor para el otoño”.  */
 		case "otoño":
 		if (temperatura == 15){
 			alert("Esta lindo!");
-		}
-		if (temperatura <15) {
-			alert("se vino el frio");
-		}
-		if (temperatura>15 && temperatura<=21) {
-			alert("esta re bueno!");
-		}
-		if (temperatura>21) {
-			alert("Mucho calor para el otoño")
+		}else { 
+			if (temperatura < 15) {
+				alert("se vino el frio");
+			}else {
+				if (temperatura>15 && temperatura<=21) {
+				alert("esta lindo!");
+				}
+				else {
+				alert("Mucho calor para el otoño");
+				}
+			}
 		}
 		break;
 		case "invierno":

@@ -10,35 +10,68 @@ d- la cantidad que tiene un peso entre 300 y 600 kilos.  */
 
 function mostrar()
 {
-	var nombre;
-	var ancho;
-	var alto;
-	var peso;
-	var i = 0;
-	var especificacionesValidas=0;
-	var pesoPesado
 
-	while (i<5) {
-		nombre = prompt("introducir nombre");
-		ancho = parseInt(prompt("introducir ancho"));
-		alto = parseInt(prompt("introducir alto"));
-		peso = parseInt(prompt("introducir peso"));
-		i++;		
+	var nombreProducto;
+	var anchoProducto;
+	var pesoProducto;
+	var altoProduto;
+	var pesoMasPesado;
+	var pesoMenosPesado;
+	var contador300e600
+	
+	var contador= 0;
 
+	while (contador < 5) {
+		contador++;
+		nombreProducto= prompt("introduzca el nombre del producto");
+//pido y valido el ANCHO del producto		
+		anchoProducto= prompt("introducir el ancho, (no puede superar los mil kilos!)");
+		anchoProducto= parseInt(anchoProducto);
+		while (isNaN(anchoProducto) || anchoProducto > 10 || anchoProducto < 0) {
+			anchoProducto=prompt("Error!. Introducir el ancho, (no puede superar los 10 de ancho!)");
+			anchoProducto= parseInt(anchoProducto)
+		}
+//pido y valido el LARGO del producto
+		altoProduto= prompt("Introducir el alto del producto, (no puede superar los 10 de alto!)");
+		altoProduto= parseInt(altoProduto);
+		while (isNaN(altoProduto) || altoProduto > 10 || altoProduto < 0) {
+			altoProduto= prompt("Error!. Introducir el alto del producto, (no puede superar los 10 de alto!)");
+			altoProduto= parseInt(altoProduto);
+		}
+//pido y valido el PESO del producto
+		pesoProducto= prompt("Introducir el peso del producto, entre 0 y 1000");
+		pesoProducto= parseInt(pesoProducto);
+		while (isNaN(pesoProducto) || pesoProducto > 1000 || pesoProducto < 0) {
+			pesoProducto= prompt("Error! Introducir el peso del producto, entre 0 y 1000");
+			pesoProducto= parseInt(pesoProducto);
+		}
+
+//Analisis
+	if (contador == 1) {
+		pesoMasPesado = pesoProducto;
+		pesoMenosPesado = pesoProducto;
+		masAlto= altoProduto
+		menorAncho= anchoProducto
+	} else {
+		if (alto > masAlto) {
+			masAlto=alto;
+		}
+		if (peso > pesoMasPesado) {
+			pesoMasPesado=pesoProducto;
+		}
+		if (menorAncho > anchoProducto) {
+			menorAncho= anchoProducto;
+		}
+	}
+	
+	if (peso>300 && peso <600){
+		contador300e600++;
 	}
 
-	if (ancho<=10 %% alto<=10 && peso<=1000){
-			especificacionesValidas = 1
-		}
-		if (especificacionesValidas!=1) {
-			alert("las especificaciones introducidas no son validas, vuelva a intentarlo");
-			i = 0;
-		}
+	
 
-	if (i==1){
-		o = peso
 
-	}
+	
 
 
 
