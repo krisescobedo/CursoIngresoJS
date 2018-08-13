@@ -16,27 +16,35 @@ function mostrar()
 	numeroTres= parseInt(numeroTres);
 
 	
-	if (numeroUno > numeroDos && numeroUno > numeroTres){
+	if (numeroUno > numeroDos && numeroUno > numeroTres)
+	{
 		mayor=numeroUno;
-		}else {
-			if (numeroDos > numeroUno && numeroDos>numeroTres){
+	}else 
+		{
+			if (numeroDos > numeroUno && numeroDos>numeroTres)
+			{
 				mayor = numeroDos;
-			} 
-			else {
+			}	 
+			else 
+			{
 				mayor = numeroTres;
 			}
 		}	
 		
-	if (numeroUno<numeroDos && numeroUno<numeroTres) {
+	if (numeroUno<numeroDos && numeroUno<numeroTres) 
+	{
 		menor=numeroUno;
-	}else {
-		if (numeroDos<numeroUno&& numeroDos<numeroTres){
-			menor=numeroDos;
+	}else 
+		{
+			if (numeroDos<numeroUno&& numeroDos<numeroTres)
+			{
+				menor=numeroDos;
+			}
+			else 
+			{
+				menor=numeroTres;
+			}
 		}
-		else {
-			menor=numeroTres;
-		}
-	}
 	alert("el mayor es " +mayor);
 	alert("el menor es " +menor);
 }	
